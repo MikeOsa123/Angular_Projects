@@ -1,0 +1,47 @@
+var topAnime = angular.module('topAnime', []);
+
+topAnime.controller('AnimeListCtrl', function($scope){
+	$scope.anime = [
+	{'name': 'One Punch Man',
+	'snippet': 'The story of Saitama, a hero who is hero just for fun and can defeat his enemies with a single punch.',
+	'year': 2015,
+	'imdb_rating': 9.1},
+	{'name': 'Avatar Last Airbender',
+	'snippet': 'The story happens in a war-torn world of elemental magic, a young boy reawakens to undertake a dangerous mystic quest to fulfill his destiny as the Avatar.',
+	'year': 2005,
+	'imdb_rating': 9.2},
+	{'name': 'Fullmetal Alchemist Brotherhood',
+	'snippet': "Two brothers search for a Philosopher's Stone after an attempt to revive their deceased mother goes awry and leaves them in damaged physical forms.",
+	'year': 2009,
+	'imdb_rating': 9.1},
+	{'name': 'Death Note',
+	'snippet': 'An intelligent high school student goes on a secret crusade to eliminate criminals from the world after discovering a notebook capable of killing anyone whose name is written into it.',
+	'year': 2006,
+	'imdb_rating': 9.0},
+	{'name': 'Hunter X Hunter',
+	'snippet': 'Gon Freecs a young boy aspires to become a Hunter, an exceptionnal being capable of greatness. With his friends and his potential, he seeks for his father who left him when he was younger.',
+	'year': 2011,
+	'imdb_rating': 8.9},
+	{'name': 'Attack on Titan',
+	'snippet': 'After his hometown is destroyed and his mother is killed, young Eren Jaegar vows to cleanse the earth of the giant humanoid Titans that have brought humanity to the brink of extinction.',
+	'year': 2013,
+	'imdb_rating': 8.8},
+	{'name': 'Dragon Ball Z',
+	'snippet': 'After learning that he is from another planet, a warrior named Goku and his friends are prompted to defend it from an onslaught of extraterrestrial enemies.',
+	'year': 1996,
+	'imdb_rating': 8.8},
+	{'name': 'One Piece',
+	'snippet': 'Follows the adventures of Monkey D. Luffy and his friends in order to find the greatest treasure ever left by the legendary Pirate, Gol D Roger. The famous mystery treasure named "One Piece".',
+	'year': 1999,
+	'imdb_rating': 8.7},
+	{'name': 'Naruto: Shippuden',
+	'snippet': 'Naruto Uzumaki, is a loud, hyperactive, adolescent ninja who constantly searches for approval and recognition, as well as to become Hokage, who is acknowledged as the leader and strongest of all ninja in the village.',
+	'year': 2007,
+	'imdb_rating': 8.5},
+	{'name': 'Bleach',
+	'snippet': "High school student Kurosaki Ichigo is unlike any ordinary kid because he can see ghosts. After an accident with a hollow, he got a power.So begins Kurosaki Ichigo's training and duty as a Shinigami, Soul Reaper.",
+	'year': 2004,
+	'imdb_rating': 8.2}
+	];
+	$scope.orderProperty = 'name';
+});

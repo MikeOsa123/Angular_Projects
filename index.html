@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html ng-app="topAnime">
+	<head>
+		<title>Top 10 Anime</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+		<script src="JS/controllers.js" type="text/javascript"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css"> 
+		<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+	</head>
+	<body ng-controller="AnimeListCtrl">
+		
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-5 col-xs-12">
+						Search: <input ng-model="query">
+						<p class="sort">Sort By:
+							<select ng:model="orderProperty">
+								<option value="name">A to Z</option>
+								<option value="-name">Z to A</option>
+								<option value="-year">Newest</option>
+								<option value="year">Oldest</option>
+								<option value="imdb_rating">IMDB rating</option>
+							</select>
+						</p>
+					</div>
+					<div class="col-sm-7 col-xs-12">
+						<h1>Top 10 ANIME!!!</h1>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<ul>
+									<li ng-repeat="anime in anime | filter:query | orderBy:orderProperty">
+										<span>{{anime.name}}</span>
+										<p>
+										{{anime.snippet}}
+										</p>
+										<p>Year: {{anime.year}} | IMDB rating: {{anime.imdb_rating}}</p>
+									</li>			
+								</ul>		
+							</div>
+						</div>
+					</div>
+					<p>Anime Show(s) Displayed: {{anime.length}}</p>
+				</div>
+			</div>
+	</body>
+
+
+</html>

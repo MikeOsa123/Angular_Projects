@@ -1,0 +1,45 @@
+body {
+	background-image: url('http://3.bp.blogspot.com/-o-YHRf5B_68/UiSgEH-dNlI/AAAAAAAAPwg/Kkj35bDv5ws/s1600/MyAnimeGirls-Background2.png');
+	background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: contain;
+	background-repeat: no-repeat;
+    -o-background-size: cover;
+	color: #666;
+	font-family: sans-serif, 'Verdana';
+	line-height: 1.5;
+	text-align: justified;
+	width: 70%;
+	margin: 5% 15%;
+}
+
+h1 {
+	text-align: justified;
+	font-family: 'Indie Flower', cursive;
+	font-weight: bold;
+	font-size: 300%;
+}
+
+li span {
+	font-weight: bold;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 150%;
+}
+
+li {
+	list-style-type: none;
+}
+
+li p {
+	font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.sort {
+	padding: 5px 0px;
+}
+
+.row {
+	width: 100%;
+}
+
